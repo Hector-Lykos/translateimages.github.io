@@ -1,0 +1,1 @@
+13 19	* * *	cd ~/image-translation && nice -n 19 timeout -k 23h 22h ./clean.sh

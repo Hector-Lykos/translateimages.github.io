@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form {
+  align-self: center;
+  background: #fbfbff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 6px black;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+section {
+  margin: 7px 5px;
+}
+section:empty {
+  display: none;
+}
+h1 {
+  font-size: 20pt;
+  margin: 5px 0;
+}
+.small {
+  font-size: 10pt;
+  margin: 0 0 5px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12pt;
+  flex: auto;
+  margin: 5px 0;
+}
+input, select, button {
+  margin: 5px;
+  font-size: 12pt;
+}
+select {
+  min-height: 1.5em;
+}
+.imagepreview > * {
+  margin: 5px;
+  vertical-align: middle;
+}
+.imagepreview > button {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+}
+.imagepreview > img {
+  max-height: 64px;
+  max-width: 64px;
+}
+.languages, .verifysubmit {
+  display: flex;
+  flex-wrap: wrap;
+}
+form > input, form > output {
+  margin: 12px 5px;
+}
+input[type="submit"] {
+  padding: 5px;
+  flex: auto;
+}
+output {
+  color: red;
+}

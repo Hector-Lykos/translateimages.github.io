@@ -1,0 +1,14 @@
+<!doctype html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Privacy</title>
+  <link href="common.css" rel="stylesheet">
+  <link href="static.css" rel="stylesheet">
+</head><body>
+  <%= navbar %>
+  <main>
+    <h1>Privacy</h1>
+    <p>This website does not store the images you post. To reduce the cost of translating the same image for multiple users, it does cache the OCR and translation results from Google, but they are encrypted with a key based on the image so that I won&#39;t be tempted to read them. Logs are kept of the languages selected, the number of characters translated, and the hashes of images translated. Your IP address is stored for about 24 hours to prevent overuse of the service, after which it is deleted.</p>
+    <p>Naturally, all images are sent to Google for OCR and the text sent to Microsoft for translation. You can read their policies <a href="https://cloud.google.com/security/privacy/">here</a> and <a href="https://privacy.microsoft.com/en-us/privacystatement">here</a>. Your IP address is not sent to Google or Microsoft unless you follow a link to one of their sites yourself.</p>
+  </main>
+</body></html>

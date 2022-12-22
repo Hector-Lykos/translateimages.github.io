@@ -1,0 +1,23 @@
+{
+  "name": "image-translation",
+  "version": "1.0.0",
+  "description": "image translation",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@google-cloud/vision": "^2.3.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.1",
+    "file-type": "^12.4.2",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "socks-proxy-agent": "^5.0.0"
+  },
+  "devDependencies": {
+    "multer": "^1.4.2"
+  }
+}

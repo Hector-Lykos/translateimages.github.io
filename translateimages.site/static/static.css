@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12pt;
+}
+main,
+form {
+  align-self: center;
+  background: #fbfbff;
+  padding: 3px 15px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 6px black;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+main {
+  max-width: 800px;
+}
+form {
+  width: 800px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+form,
+label {
+  display: flex;
+  flex-direction: column;
+}
+main > *,
+form > * {
+  margin: 12px 0;
+}
+form > label,
+form > input,
+.cooldown {
+  margin: 0 0 12px;
+}
+h1 {
+  font-size: 20pt;
+}
+textarea {
+  height: 400px;
+}
+code {
+  display: inline-block;
+  outline: 1px dotted black;
+}
+input {
+  font-size: 12pt;
+}
+input[type="submit"] {
+  padding: 5px;
+}
+.cooldown {
+  color: red;
+}

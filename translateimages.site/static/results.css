@@ -1,0 +1,120 @@
+body {
+  display: flex;
+}
+body > div {
+  flex: auto;
+}
+.annotation-reset-body {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#warnings {
+  color: red;
+  text-align: center;
+}
+#warnings > div {
+  margin: 15px 0;
+}
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.annotation-reset-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.image-container {
+  position: relative;
+}
+.annotation-reset-image {
+  display: block;
+  line-height: 0;
+}
+.annotation-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+#annotation-reset {
+  display: none;
+}
+.annotation {
+  position: absolute;
+  visibility: hidden;
+}
+[name=annotation-select] {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  visibility: visible;
+  height: 100%;
+}
+.outline {
+  position: relative;
+  visibility: visible;
+  pointer-events: none;
+  overflow: visible;
+}
+.outline > polygon {
+  pointer-events: fill;
+  fill: rgba(255,255,255,.15);
+}
+.annotation:hover > .outline > polygon,
+[name=annotation-select]:checked ~ .outline > polygon {
+  fill: rgba(255,255,128,.15);
+}
+[name=annotation-select]:focus ~ .outline > polygon {
+  fill: rgba(255,255,0,.3);
+  stroke-width: 3px;
+}
+.annotation:hover > .tooltip-root,
+[name=annotation-select]:checked ~ .tooltip-root {
+  visibility: visible;
+}
+.tooltip-root {
+  margin-top: -12px;
+  padding-top: 18px;
+}
+.tooltip {
+  position: relative;
+  background: white;
+  border: 1px solid black;
+  white-space: pre;
+  z-index: 1;
+}
+.tooltip > * {
+  display: block;
+  padding: 4px;
+}
+.translation,
+.original {
+  white-space: pre-wrap;
+}
+.attribution,
+.openT {
+  font-size: 75%;
+}
+.attribution > span,
+.attribution > a > img {
+  vertical-align: middle;
+}
+.attribution > a {
+  margin: 0px 4px 0px 8px;
+  display: inline-block;
+}
+.attribution > a > img {
+  margin: 9px;
+}
+.tooltip.hide-translation > .attribution,
+.tooltip.hide-translation > .translation {
+  display: none;
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=imagetranslate.site
+After=network.target
+
+[Service]
+Environment=NODE_ENV=production
+Type=simple
+User=it
+WorkingDirectory=/home/it/image-translation
+ExecStart=/usr/bin/node /home/it/image-translation/server.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

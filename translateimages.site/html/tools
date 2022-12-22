@@ -1,0 +1,22 @@
+<!doctype html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tools</title>
+  <link href="common.css" rel="stylesheet">
+  <link href="static.css" rel="stylesheet">
+</head><body>
+  <%= navbar %>
+  <main>
+    <h1>Tools</h1>
+    <p>You can use a URL like</p>
+    <a href="<%- host %>?imageURL=https%3A%2F%2Fexample.com%2Fexample.png"><%- host %>?imageURL=https%3A%2F%2Fexample.com%2Fexample.png</a>
+    <p>to bring up form with the URL already filled in so that all you have to do is submit. 
+      This is useful with browser extensions designed for reverse searching images; for example, in the extension 
+      <a href="http://saucenao.com/tools/">Image Search Options</a>, 
+      you can put <code><%- host %></code> under "Search URL" and <code>imageURL=::$URL::</code> under "Search Variables" 
+      to add an entry for this site which you can access from the right-click context menu on any image.</p>
+    <p>Setting the language fields is also possible, for example:</p>
+    <a href="<%- host %>?imageURL=https%3A%2F%2Fexample.com%2Fexample.png&srcLang=ja&destLang=es"><%- host %>?imageURL=https%3A%2F%2Fexample.com%2Fexample.png&srcLang=ja&destLang=es</a>
+    <p>You can also use <code>#</code> in place of <code>?</code>; this method has the advantage of not sending the URL to the site until you submit the form.</p>
+  </main>
+</body></html>
